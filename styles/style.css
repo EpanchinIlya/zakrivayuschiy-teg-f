@@ -19,6 +19,7 @@
   font-family: var(--main-family);
   font-size: 18px;
   background-image: var(--background-image);
+  background-color: var(--page-rezerv-background-color);
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -101,7 +102,7 @@
 
 .theme-menu__button:disabled {
   opacity: 60%;
-  color: var(--text);
+  /* color: var(--text); */
   pointer-events: none;
 }
 
@@ -112,15 +113,6 @@
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
-@keyframes arrow {
-  0% {
-    left: -19px;
-  }
-
-  100% {
-    left: -24px;
-  }
-}
 
 .article {
   width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
@@ -144,9 +136,9 @@
   padding-top: 5px;
   padding-right: clamp(0.625rem, 0.3169rem + 1.3146vw, 1.5rem);
   padding-bottom: clamp(0.1875rem, 0.1655rem + 0.0939vw, 0.25rem);
-  padding-left: 10px;
-  font-size: inherit;
-  line-height: 22px;
+  /* padding-left: 10px; */
+  /* font-size: inherit; */
+  /* line-height: 22px; */
 }
 
 .best-auto {
@@ -472,29 +464,7 @@
   animation: sparks 0.3s ease-in 1 0.3s;
 }
 
-@keyframes heart {
-  0% {
-    scale: 1;
-  }
 
-  100% {
-    scale: 1.5;
-  }
-}
-
-@keyframes sparks {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 100%;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
 
 /* dialog */
 
