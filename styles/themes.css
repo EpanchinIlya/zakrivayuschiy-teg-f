@@ -20,8 +20,8 @@
     --core-color: #00cc14;
     --contur-color: #00cc14;
     --sparks-color: red;
-    --main-body-color: black;
-    --core-color: black;
+    --main-body-color: #00cc14;
+    --core-color: #00cc14;
 }
 
 :root.theme-light {
@@ -59,7 +59,7 @@
         --core-color: #00cc14;
         --contur-color: #00cc14;
         --sparks-color: red;
-        --main-body-color: black;
-        --core-color: black;
+        --main-body-color: #00cc14;
+        --core-color: #00cc14;
     }
 }
