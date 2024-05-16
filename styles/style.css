@@ -26,7 +26,6 @@
 }
 
 .header {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,7 +133,7 @@
 .article-title {
   padding-top: clamp(0.25rem, 0.228rem + 0.0939vw, 0.3125rem);
   padding-right: clamp(0.625rem, 0.3169rem + 1.3146vw, 1.5rem);
-  padding-bottom:  clamp(0.25rem, 0.3345rem - 0.0939vw, 0.3125rem);
+  padding-bottom: clamp(0.25rem, 0.3345rem - 0.0939vw, 0.3125rem);
   padding-left: 10px;
   font-size: inherit;
   line-height: 22px;
@@ -162,11 +161,6 @@
 }
 
 .label-text {
-  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
-    1px 0 var(--background-color), 0 -1px var(--background-color);
-}
-
-.label-text {
   position: absolute;
   top: 25px;
   right: 11px;
@@ -174,9 +168,13 @@
   color: var(--text);
   font-family: var(--accent-family);
   font-size: 14px;
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
+    1px 0 var(--background-color), 0 -1px var(--background-color);
   mix-blend-mode: hard-light;
-
-  @supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+  @supports (
+    (text-stroke: 1px var(--background-color)) or
+      (-webkit-text-stroke: 1px var(--background-color))
+  ) {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
@@ -309,8 +307,7 @@
   width: 100%;
   height: 100%;
   background-color: var(--text);
-  transition: box-shadow 0.3s ease;
-  transition: transform 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease, transform 0.5s ease-in-out;
   transform: translateX(calc(-100% - 2px));
 }
 
