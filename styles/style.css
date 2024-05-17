@@ -308,7 +308,6 @@
 /* ============== */
 
 .card__icon-button {
-  display: block;
   display: flex;
   justify-content: center;
   align-items: center;
